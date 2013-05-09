@@ -16,19 +16,20 @@
 	<?php
 	
 	echo "<form action='index.php' method='post'>
-					<select name='parameter'>
+					<select name='option'>
 					<option value='--version'>Version</option>
 					<option value='--help'>Help</option>
-					<option value='--auto-detect'>Auto detect camera</option>
 					<option value='--abilities'>Show camera's abilities</option>
 					<option value='--list-config'>List configurable parameters</option>
-					<option value='--capture-image-and-download --filename \"%Y%m%d-%H%M%S-%03n.%C\"'>Capture and download (custom file name)</option>
+					<option value='--capture-image-and-download --filename \"%Y%m%d-%H%M%S-%03n.%C\"'>Capture-Download-Rename</option>
 					</select>
 					<input type='submit' value='Run'/>
 			</form>";
 			
-			$command='gphoto2 '.$_POST['parameter'];
+			$command='gphoto2 '.$_POST['option'];
 			echo shell_exec("$command");
+			echo "<br /><h2>Camera Summary</2>";
+			echo shell_exec("gphoto2 --summary");
 			echo shell_exec("gphoto2 --reset");
 			
 			?>
