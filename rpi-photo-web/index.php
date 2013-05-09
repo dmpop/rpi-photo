@@ -28,7 +28,7 @@
 			
 			$command='gphoto2 '.$_POST['option'];
 			echo shell_exec("$command");
-			echo "<br /><h2>Camera Summary</2>";
+			echo "<br /><h2>Camera Summary</h2>";
 			echo shell_exec("gphoto2 --summary");
 			echo shell_exec("gphoto2 --reset");
 			
