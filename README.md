@@ -1,4 +1,4 @@
 rpi-photo
 =========
 
-Miscellaneous parts for the Raspberry Pi photo server project
+Miscellaneous scripts and files for the Raspberry Pi photo server project.
