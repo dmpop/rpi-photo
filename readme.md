@@ -14,4 +14,4 @@ Miscellaneous scripts and files for the Raspberry Pi photo server project.
 
 **rpi-photo-sketch.fzz** Fritzing sketch for use with the *fetch.py* scripts.
 
-All scripts and files are released under [GNU General Public License](http://www.gnu.org/licenses/gpl.html)
+All scripts and files are released under [GNU General Public License v3](http://www.gnu.org/licenses/gpl.html).
