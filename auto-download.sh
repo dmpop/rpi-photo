@@ -17,4 +17,4 @@ gphoto2 --new
 # Rename files using ExifTool based on EXIF date and time data
 exiftool -r -d %Y%m%d-%H%M%S.%%e "-FileName<DateTimeOriginal" .
 # Shutdown
-halt
+shutdown -h now
